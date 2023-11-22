@@ -1,0 +1,106 @@
+
+.burger-button {
+  position:fixed;
+  top: 6vh;
+  right: 4vh;
+  z-index: 9;
+  padding: 8px;
+  @media screen and (width > 767px) {
+    display: none;
+  }
+}
+/*this is where you can chand the color of the buttons*/
+.burger-button span{
+  width: 40px;
+  border: 2px solid  #242D52;
+  background-color:  #242D52;
+  display: block;
+  border-radius: 22px;
+  transition: 2s;
+}
+.burger-button.active span{
+  border-color: #F25F3A;
+  background-color:#F25F3A;
+}
+
+.burger-top, .burger-bottom{
+  position: absolute;
+}
+
+.burger-top{
+  top: -02px;
+}
+
+.burger-bottom{
+  bottom: -02px;
+}
+/* make sure this has the same top as the burger button has padding*/
+.burger-button.active .burger-top{
+  position: absolute;
+  top: 8px;
+  transform: rotateZ(45deg);
+}
+
+.burger-button.active .burger-middle{
+/*   transform: rotateZ(270deg); */
+  border-color: rgba(0,0,0,0);
+  background-color:rgba(0,0,0,0);
+}
+
+/* make sure this has the same bottom as the burger button has padding*/
+
+.burger-button.active .burger-bottom{
+  position: absolute;
+  bottom: 8px;
+  transform: rotateZ(-45deg);
+}
+
+.burger-menu {
+    display: flex;
+    position: fixed;
+    top: 0vh;
+    //left:100vw;
+    right: -100vw;
+    bottom: 0vh;
+    background-color: #FFEFEB;
+    padding:5px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    z-index: 8;
+    transition:1s;
+    align-content:space-around;
+    justify-content:space-around;
+    flex-direction:column;
+   @media screen and (width > 767px) {
+    width: 100%;
+    flex-direction: row;
+    position: relative;
+    background: #FFF;
+    left: 0;
+    opacity: 1;
+    max-width: 560px;
+    box-shadow: none;
+    gap: 10%;
+    margin: auto;
+    padding: 0%;
+    }
+}
+.burger-menu.active{
+  left:50vw;
+  right:0;
+}
+.burger-menu a {
+  text-decoration: none;
+  font-size: 20px;
+  display:block;
+  padding: 5px 15px;
+  text-align:center;
+  white-space:nowrap;
+  color: var(--blue, #242D52);
+  font-family: 'Be Vietnam Pro';
+  font-weight: 700;
+  line-height: normal;
+  @media screen and (width > 767px) {
+    font-size: 16px;
+    padding: 0;
+  }
+}

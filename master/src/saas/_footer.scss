@@ -1,0 +1,220 @@
+
+.upper-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 50px 5% 100px;
+  justify-content: center;
+  align-items: center;
+  background: #F25F3A;
+  background-image: url(../images/bg-simplify-section-mobile.svg);
+  background-repeat: no-repeat;
+  @media screen and (width > 767px) {
+    background-image: url(../images/bg-simplify-section-desktop.svg) ;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 75px 5% 75px;
+  }
+}
+.fotter-title {
+  width: 330px;
+  color: #FAF8F8;
+  @media screen and (width > 767px) {
+    width: 400px;
+    text-align: start;
+  }
+}
+.footer-small-button {
+  width: 140px;
+  height: 48px;
+  border-radius: 20px;
+  border: none;
+  background:  #FAF8F8;
+  color: #F25F3A;
+  font-family: 'Be Vietnam Pro';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+  &:hover{
+    border: 2px solid;
+    border-color:   #F25F3A;
+
+  }
+}
+.low-footer {
+  width: 100%;
+  background: #1D1F25;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  @media screen and (width > 767px) {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 60px 5% 60px;
+    
+  }
+}
+.button {
+  width: 300px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (width > 767px) {
+    margin: 0;
+  }
+}
+.footer-button {
+  width: 220px;
+  height: 46px;
+  border-radius: 20px;
+  background: #FAF8F8;
+  color: #9095A7;
+  font-family: 'Be Vietnam Pro';
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 15px 35px 15px 25px;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    border: 2px solid;
+    border-color:   #F25F3A;
+
+  }
+}
+.footer-go-button {
+  width: 70px;
+  height: 42px;
+  border-radius: 20px;
+  background: #F25F3A;
+  color:#FAF8F8;
+  font-family: 'Be Vietnam Pro';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;      
+  line-height: normal;
+  padding: 10px 21px;
+  border: none;
+  cursor: pointer;
+  &:hover{
+    background: rgba(202, 57, 12, 0.77);
+    box-shadow: 5px 10px 40px 5px rgba(201, 72, 17, 0.41);
+  }
+}
+.footer-contacts {
+  @media screen and (width > 767px) {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 108px;
+  }
+}
+.contacts{
+ display: inline-flex;
+ align-items: flex-start;
+ gap: 95px;
+ width: 270px;
+ @media screen and (width > 767px) {
+  
+ }
+}
+.contact1,
+.contact2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  @media screen and (width > 767px) {
+    align-items: start;
+  }
+ 
+}
+.contact1 p,
+.contact2 p {
+  width: fit-content;
+  height: auto;
+  color: #FAF8F8;
+  &:hover{
+    color: #F25F3A;
+  }
+  @media screen and (width > 767px) {
+    text-align: start;
+  }
+    
+}
+.contact1 {
+  height: 120px;
+}
+.contact2 {
+  height: 90px;
+}
+.foter-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin: 50px auto;
+  @media screen and (width > 767px) {
+    align-items: start;
+    flex-direction: column-reverse;
+    margin: 0px auto;
+  }
+  
+}
+
+.socal-icons {
+  display: flex;
+  width: 301px;
+  height: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (width > 767px) {
+   width: 170px;
+   column-gap: 10px;
+  }
+}
+
+svg{
+  width: 35px;
+  height: 35px;
+  fill: white;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    stroke: #F25F3A;
+    fill: #F25F3A;
+    color: #F25F3A;
+  } 
+  @media screen and (width > 767px) {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.footer-logo{
+  width: 173px;
+  height: 30px;
+  
+}
+.white-contact-info {
+  color: #FAF8F8;
+  font-family: 'Be Vietnam Pro';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 35px;
+  text-align: center;
+  @media screen and (width > 767px) {
+    display: none;
+  }
+}

@@ -1,0 +1,108 @@
+.section2 {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.section2-content{
+  display: flex;
+  min-width: 375px;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 85px 0 85px 30px;
+  @media screen and (width > 767px) {
+    margin:0 10% 140px ;
+    width: 100%;
+    max-width: 1140px;
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.blok-title {
+  display: flex;
+  width: 373px;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 50px;
+  @media screen and (width > 767px) {
+    gap: 0px;
+    width: 456px;
+    align-items: flex-start;
+    margin-bottom: 0;
+  }
+}
+.blok-title-h2 {
+  text-align: center;
+  min-width: 300px;
+  @media screen and (width > 767px) {
+    text-align: start;
+    max-width: 456px;
+  }
+}
+.blok-title-text {
+  text-align: center;
+  min-width: 300px;
+  @media screen and (width > 767px) {
+    text-align: start;
+    max-width: 350px;
+  }
+}
+.section2-cards {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  margin-left: 20px;
+  @media screen and (width > 767px) {
+    margin-left: 0px;
+  }
+}
+.card-item {
+  width: 355px;
+  height: 157px;
+  display: grid;
+  grid-template-columns: 70px 285px;
+  @media screen and (width > 767px) {
+    width: 528px;
+    grid-template-columns: 70px 445px;
+    grid-template-rows: 42px 100px;
+  }
+}
+.card-number {
+  width: 70px;
+  height: 42px;
+  border-radius: 20px;
+  background: #F25F3A;
+  color: #FAF8F8;
+  font-family: Be Vietnam Pro;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 26px;
+
+}
+.card-title {
+  width: 285px;
+  background: #FFEFEB;
+  height: 42px;
+  padding: 12px 20px;
+  @media screen and (width > 767px) {
+    background: #FFF;
+    padding: 0 20px;
+    width: 350px;
+    text-align: start;
+
+  }
+}
+.card-text {
+  width: 339px;
+  @media screen and (width > 767px) {
+    width: 438px;
+    margin-left: 90px;
+    text-align: start;
+  }
+}

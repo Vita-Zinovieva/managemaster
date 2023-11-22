@@ -1,0 +1,84 @@
+.section3{
+  align-items: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  
+}
+.h2-title {
+  margin: auto;
+  width: 270px;
+  @media screen and (width > 767px) {
+    width: 352px;
+    margin-bottom: 70px;
+     
+   }
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  
+}
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 25px;
+  @media screen and (width > 767px) {
+    gap: 25px;
+  }
+}
+.swiper-slide {
+  text-align: center;
+  max-width: 100%;
+}
+.swiper-card {
+  display: flex;
+  width: 340px;
+  height: 320px;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+  background-color: #FAFAFA;
+  margin-bottom: 25px;
+  @media screen and (width > 767px) {
+   width: 400px;
+   height: 250px;
+    justify-content: start;
+  }
+  @media screen and (width > 1000px) {
+    width: 465px;
+    height: 250px;
+     justify-content: start;
+   }
+}
+.avatar-img {
+  width: 70px;
+  height: 70px;
+}
+.swiper-card .card-title {
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  padding: 0;
+  
+  
+}
+.swiper-card .card-text {
+  width: 300px;
+  margin: 0 20px;
+  text-align: center;
+  @media screen and (width > 767px) {
+    width: 375px;
+  }
+  @media screen and (width > 1000px) {
+    width: 445px;
+  }
+}
+
+.swiper-btn{
+  margin: 25px auto 40px;
+}
